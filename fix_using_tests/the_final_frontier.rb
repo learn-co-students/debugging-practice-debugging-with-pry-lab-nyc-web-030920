@@ -8,11 +8,16 @@ def state_log(star_date)
 end
 
 def crew
-  ["Geordi", "Data", "Worf", "William", "Beverly", "Deanna"]
+  names = ["Geordi", "Data", "Worf", "William", "Beverly", "Deanna"]
 end
 
-def greet_crew (crew)
-  crew.each {|crew_member| "Hello #{crew_member}."}
+def greet_crew(crew)
+  array = []
+  crew.each do |names|
+  greeting = "Hello #{names}."
+  array << greeting
+  end
+  array
 end
 
 def engage
