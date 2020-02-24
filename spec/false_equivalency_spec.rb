@@ -1,3 +1,5 @@
+require 'pry'
+
 require_relative '../fix_using_tests/false_equivalency'
 
 describe "false_equivalency" do
@@ -6,3 +8,4 @@ describe "false_equivalency" do
     expect(selection(2)).to eq("HAM HAM HAM IN MY TUMMY")
   end
 end
+
